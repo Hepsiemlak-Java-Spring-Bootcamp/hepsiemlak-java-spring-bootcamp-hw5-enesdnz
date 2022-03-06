@@ -34,10 +34,10 @@ public class GatewayConfiguration {
                 //Banner Controller routing (EmlakBurada-Banner)
                 .route(predicateSpec -> predicateSpec.method(HttpMethod.GET).and()
                     .path("/banners")
-                        .uri("http://localhost:8081/users"))
+                        .uri("http://localhost:8081/banners"))
                 .route(predicateSpec -> predicateSpec.method(HttpMethod.POST).and()
                     .path("/banners")
-                        .uri("http://localhost:8081/users"))
+                        .uri("http://localhost:8081/banners"))
                 .build();
 
     }
